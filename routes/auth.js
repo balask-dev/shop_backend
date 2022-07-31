@@ -19,8 +19,7 @@ router.post("/register", async (req, res) => {
     res.send(user);
   } catch (err) {
     res.send(err);
-  }
-});
+  }});
  
 router.post("/login", async (req, res) => {
   try {
