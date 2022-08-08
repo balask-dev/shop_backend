@@ -14,8 +14,8 @@ dotenv.config();
 mongoose.connect(process.env.MONGO_URL,{ useNewUrlParser: true, useUnifiedTopology: true },
   () => console.log("Connected"));
 
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 app.use("/api/auth", authRoute);
 app.use("/api/users", userRoute);
